@@ -176,9 +176,14 @@ var valuesArray = [99, 66, 829, 1941, 8, 76];
 var copyValuesArray = [];
 
 function copyArray(originArray,destinationArray){
-
+   for(var i = 0; i<originArray.length; i++){
+      destinationArray.push(originArray[i]);
+   
+   }
+   return destinationArray;
 }
-
+console.log(copyArray(valuesArray,copyValuesArray));
+console.log(copyValuesArray);
 
 /*Final Boss*/
 
